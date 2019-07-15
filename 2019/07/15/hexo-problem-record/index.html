@@ -6,18 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | ZlotCheng的博客</title>
+  <title>hexo-problem-record | ZlotCheng的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="希望能够开始坚持写博客！">
-<meta property="og:type" content="website">
-<meta property="og:title" content="ZlotCheng的博客">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="HEXO部署至github遇到的问题问题一：本地运转正常，部署成功，但是用 xxxx.github.io 访问不了，显示“无法访问其网站”.如下图所示  解决方案一： hexo clean //删除本地已经生成的代码 hexo g //重新生成代码文件 hexo d //部署至github   解决方案二： 查看github所对应的邮箱有没有收到报错日志 根据日志排查原因     问题二：$ he">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo-problem-record">
+<meta property="og:url" content="http://yoursite.com/2019/07/15/hexo-problem-record/index.html">
 <meta property="og:site_name" content="ZlotCheng的博客">
-<meta property="og:description" content="希望能够开始坚持写博客！">
+<meta property="og:description" content="HEXO部署至github遇到的问题问题一：本地运转正常，部署成功，但是用 xxxx.github.io 访问不了，显示“无法访问其网站”.如下图所示  解决方案一： hexo clean //删除本地已经生成的代码 hexo g //重新生成代码文件 hexo d //部署至github   解决方案二： 查看github所对应的邮箱有没有收到报错日志 根据日志排查原因     问题二：$ he">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://yoursite.com/.com//problem_screenshot.jpg">
+<meta property="og:updated_time" content="2019-07-15T11:32:20.661Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ZlotCheng的博客">
-<meta name="twitter:description" content="希望能够开始坚持写博客！">
+<meta name="twitter:title" content="hexo-problem-record">
+<meta name="twitter:description" content="HEXO部署至github遇到的问题问题一：本地运转正常，部署成功，但是用 xxxx.github.io 访问不了，显示“无法访问其网站”.如下图所示  解决方案一： hexo clean //删除本地已经生成的代码 hexo g //重新生成代码文件 hexo d //部署至github   解决方案二： 查看github所对应的邮箱有没有收到报错日志 根据日志排查原因     问题二：$ he">
+<meta name="twitter:image" content="http://yoursite.com/.com//problem_screenshot.jpg">
   
     <link rel="alternative" href="/atom.xml" title="ZlotCheng的博客" type="application/atom+xml">
   
@@ -157,114 +160,166 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-hexo-problem-record" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      hexo-problem-record
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/07/15/hexo-problem-record/" class="archive-article-date">
+
+        
+        <a href="/2019/07/15/hexo-problem-record/" class="archive-article-date">
   	<time datetime="2019-07-15T10:31:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-15</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/07/15/hexo-problem-record/">hexo-problem-record</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="HEXO部署至github遇到的问题"><a href="#HEXO部署至github遇到的问题" class="headerlink" title="HEXO部署至github遇到的问题"></a>HEXO部署至github遇到的问题</h1><p>问题一：本地运转正常，部署成功，但是用 xxxx.github.io 访问不了，显示“无法访问其网站”.如下图所示<br><img src="/.com//problem_screenshot.jpg" alt></p>
+<ul>
+<li>解决方案一：<ol>
+<li>hexo clean //删除本地已经生成的代码</li>
+<li>hexo g //重新生成代码文件</li>
+<li>hexo d //部署至github</li>
+</ol>
+</li>
+<li>解决方案二：<ol>
+<li>查看github所对应的邮箱有没有收到报错日志</li>
+<li>根据日志排查原因</li>
+</ol>
+</li>
+</ul>
+<hr>
+<p>问题二：$ hexo d  结果（ ERROR Deployer not found: git）</p>
+<pre><code>执行以下命令安装插件：npm install --save hexo-deployer-git</code></pre><p>问题三：下载主题hexo-theme-yilia之后无法直接使用，需要安装插件并配置<br>（1）npm i hexo-generator-json-content –save<br>（2）在主目录的配置文件中加上以下配置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">jsonContent:</span><br><span class="line">  meta: false</span><br><span class="line">  pages: false</span><br><span class="line">  posts:</span><br><span class="line">    title: true</span><br><span class="line">    date: true</span><br><span class="line">    path: true</span><br><span class="line">    text: false</span><br><span class="line">    raw: false</span><br><span class="line">    content: false</span><br><span class="line">    slug: false</span><br><span class="line">    updated: false</span><br><span class="line">    comments: false</span><br><span class="line">    link: false</span><br><span class="line">    permalink: false</span><br><span class="line">    excerpt: false</span><br><span class="line">    categories: false</span><br><span class="line">    tags: true</span><br></pre></td></tr></table></figure>
 
-        <div class="article-info info-on-right">
-          
-          
 
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/07/15/hexo-problem-record/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/07/15/My-First-Blog/" class="archive-article-date">
-  	<time datetime="2019-07-15T10:00:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-15</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/07/15/My-First-Blog/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">My First Blog</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/07/15/My-First-Blog/">My First Blog</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">问题记录</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#HEXO部署至github遇到的问题"><span class="toc-number">1.</span> <span class="toc-text">HEXO部署至github遇到的问题</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/07/15/hello-world/" class="archive-article-date">
-  	<time datetime="2019-07-15T08:26:00.236Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-15</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/07/15/hello-world/">Hello World</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -287,8 +342,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
